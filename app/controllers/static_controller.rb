@@ -11,7 +11,7 @@ class StaticController < ApplicationController
       @error = true
     else
       calculated_body = "El #{DateTime.now.in_time_zone("Caracas").strftime('%d/%m/%Y a las %I:%M%p')} se recibió una solicitud de información:\n\n"
-      calculated_body << "#{params[:message]}.\n\n"
+      calculated_body << "#{params[:message]}\n\n"
       calculated_body << "Contestar a: \n"
       if not params[:phone].first.blank?
         calculated_body << "Telefono - #{params[:phone][0]}\n"
