@@ -1,10 +1,12 @@
 <%= render 'layouts/nav_bar' %>
 <div class="container">
+  </br>
   <div class="row">
     <div class="col-md-6 col-xs-12">
-    </br></br>
-      <%= image_tag("logo.png") %>
-    </br></br>
+      <h1 class="text-center bigger">Grupo</br>Uno a Uno</h1>
+      </br></br>
+      <%= image_tag("coaching.png", id: 'logo', class: 'text-center img-responsive')%>
+      </br></br>
     </div>
     <div class="col-md-6 col-xs-12 ">
       <div class="jumbotron">
@@ -13,13 +15,13 @@
           <div class="form-group">
             <div class="row">
               <div class="col-md-12">
-                <textarea rows="5" class="form-control" placeholder="Mi hijo esta haciendo una pataleta..."></textarea>
+                <textarea rows="5" class="form-control" placeholder="Estoy teniendo problemas con ..."></textarea>
               </div>
             </div>
             </br>
             <div class="row">
               <div class="col-md-6 col-xs-6">
-                <input type="text" class="form-control" placeholder="Correo Electrónico">
+                <input type="text" class="form-control" placeholder="Email">
               </div>
               <div class="col-md-6 col-xs-6">
                 <input type="text" class="form-control" placeholder="Teléfono">
@@ -36,4 +38,10 @@
       </div>
     </div>
   </div>
+
+  <div class="jumbotron">
+    <h2 class="text-center">Centro de atención para el niño, el adolescente, el adulto y la familia</h2>
+    <h3 class="text-center">Psicología - Psiquiatría - Neurodesarrollo - Psicopedagogía </br>Terapia Ocupacional - Terapia de Lenguaje</h3>
+  </div>
 </div>
+<%= render 'layouts/footer' %>
